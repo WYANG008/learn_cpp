@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20201010-0748-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.18.4"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-CE2V0H1"
+	OSRelease=" Personal"
+	OSVersion=" (Build 18363)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="18832"
+	TotalPhysicalMemory="16243"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="3000"
+	>
+	<Testing>
+		<StartDateTime>Oct 10 15:51 Malay Peninsula Standard Time</StartDateTime>
+		<StartTestTime>1602316276</StartTestTime>
+		<TestList>
+			<Test>./test/ExampleTests</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>ExampleTests</Name>
+			<Path>./test</Path>
+			<FullName>./test/ExampleTests</FullName>
+			<FullCommandLine>E:\2_Devs\cpp\learn_cpp\build\test\ExampleTests.exe</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.147532</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>E:\2_Devs\cpp\learn_cpp\build\test\ExampleTests.exe</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyVUU1rwzAMvftX6JjAEtqxU2CHQtIy2MZIul2aEFxXCQHHDv5o+/PnfKw0g0Kr07P0/KQnpVaIRtTQ0kZ4PlRKtpBE+XMZ41HnrOtyjlSJske1lDVHg9pcQ61YXveo7DVCxsju9RIFpFODJfScscGEtW0MhmQXXKKADZd7ysc6imOjpGhROC6awHb/yNeayZm2HcetS2iyg/T7E4YoZpUwxlYKbRQ1uOkzH5Qpqckty4PDmYDLRi8RrGnDrULyQ7lFkFUEFeUaCcCKGUv53zs5d8gMHiIwyqIbDNart/ckvnMw8BbQav8+2+AtHRmMNJT75L69Gmc1OMiTmF/t1rVAURHO+zhLX6ssGy0tBq4O50ZHhSfgjXargD1yeYoe3gUhTmj6sU2yLfkFvEjlHA==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Oct 10 15:51 Malay Peninsula Standard Time</EndDateTime>
+		<EndTestTime>1602316277</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
