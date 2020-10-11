@@ -99,7 +99,6 @@ ExampleTests_EXTERNAL_OBJECTS =
 test/ExampleTests.exe: test/CMakeFiles/ExampleTests.dir/ExampleTests.cpp.obj
 test/ExampleTests.exe: test/CMakeFiles/ExampleTests.dir/build.make
 test/ExampleTests.exe: lib/libgtest_maind.a
-test/ExampleTests.exe: libExample.a
 test/ExampleTests.exe: lib/libgtestd.a
 test/ExampleTests.exe: test/CMakeFiles/ExampleTests.dir/linklibs.rsp
 test/ExampleTests.exe: test/CMakeFiles/ExampleTests.dir/objects1.rsp

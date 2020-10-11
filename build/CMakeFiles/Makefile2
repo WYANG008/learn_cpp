@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = E:\2_Devs\cpp\learn_cpp\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Example.dir/all
+all: CMakeFiles/Variant.dir/all
 all: googletest/all
 all: test/all
 
@@ -84,7 +84,7 @@ preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Example.dir/clean
+clean: CMakeFiles/Variant.dir/clean
 clean: googletest/clean
 clean: test/clean
 
@@ -154,7 +154,7 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/cle
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
-test/all: test/CMakeFiles/ExampleTests.dir/all
+test/all: test/CMakeFiles/VariantTests.dir/all
 
 .PHONY : test/all
 
@@ -164,36 +164,36 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
-test/clean: test/CMakeFiles/ExampleTests.dir/clean
+test/clean: test/CMakeFiles/VariantTests.dir/clean
 
 .PHONY : test/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Example.dir
+# Target rules for target CMakeFiles/Variant.dir
 
 # All Build rule for target.
-CMakeFiles/Example.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Example.dir\build.make CMakeFiles/Example.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Example.dir\build.make CMakeFiles/Example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\2_Devs\cpp\learn_cpp\build\CMakeFiles --progress-num=1,2 "Built target Example"
-.PHONY : CMakeFiles/Example.dir/all
+CMakeFiles/Variant.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Variant.dir\build.make CMakeFiles/Variant.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Variant.dir\build.make CMakeFiles/Variant.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\2_Devs\cpp\learn_cpp\build\CMakeFiles --progress-num=1,2 "Built target Variant"
+.PHONY : CMakeFiles/Variant.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Example.dir/rule: cmake_check_build_system
+CMakeFiles/Variant.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\2_Devs\cpp\learn_cpp\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Example.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Variant.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\2_Devs\cpp\learn_cpp\build\CMakeFiles 0
-.PHONY : CMakeFiles/Example.dir/rule
+.PHONY : CMakeFiles/Variant.dir/rule
 
 # Convenience name for target.
-Example: CMakeFiles/Example.dir/rule
+Variant: CMakeFiles/Variant.dir/rule
 
-.PHONY : Example
+.PHONY : Variant
 
 # clean rule for target.
-CMakeFiles/Example.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Example.dir\build.make CMakeFiles/Example.dir/clean
-.PHONY : CMakeFiles/Example.dir/clean
+CMakeFiles/Variant.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Variant.dir\build.make CMakeFiles/Variant.dir/clean
+.PHONY : CMakeFiles/Variant.dir/clean
 
 #=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
@@ -305,33 +305,33 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/ExampleTests.dir
+# Target rules for target test/CMakeFiles/VariantTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/ExampleTests.dir/all: CMakeFiles/Example.dir/all
-test/CMakeFiles/ExampleTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-test/CMakeFiles/ExampleTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/depend
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\2_Devs\cpp\learn_cpp\build\CMakeFiles --progress-num=3,4 "Built target ExampleTests"
-.PHONY : test/CMakeFiles/ExampleTests.dir/all
+test/CMakeFiles/VariantTests.dir/all: CMakeFiles/Variant.dir/all
+test/CMakeFiles/VariantTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+test/CMakeFiles/VariantTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\2_Devs\cpp\learn_cpp\build\CMakeFiles --progress-num=3,4 "Built target VariantTests"
+.PHONY : test/CMakeFiles/VariantTests.dir/all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/ExampleTests.dir/rule: cmake_check_build_system
+test/CMakeFiles/VariantTests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\2_Devs\cpp\learn_cpp\build\CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/ExampleTests.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/VariantTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\2_Devs\cpp\learn_cpp\build\CMakeFiles 0
-.PHONY : test/CMakeFiles/ExampleTests.dir/rule
+.PHONY : test/CMakeFiles/VariantTests.dir/rule
 
 # Convenience name for target.
-ExampleTests: test/CMakeFiles/ExampleTests.dir/rule
+VariantTests: test/CMakeFiles/VariantTests.dir/rule
 
-.PHONY : ExampleTests
+.PHONY : VariantTests
 
 # clean rule for target.
-test/CMakeFiles/ExampleTests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/clean
-.PHONY : test/CMakeFiles/ExampleTests.dir/clean
+test/CMakeFiles/VariantTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/clean
+.PHONY : test/CMakeFiles/VariantTests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-set(This Example)
+set(This Variant)
 
 project(${this} C CXX)
 
@@ -10,8 +10,8 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 enable_testing()
 add_subdirectory(googletest)
 
-set(Headers Example.hpp)
-set(Sources Example.cpp)
+set(Headers Variant.hpp)
+set(Sources Variant.cpp)
 
 add_library(${This} STATIC ${Sources} ${Headers})
 

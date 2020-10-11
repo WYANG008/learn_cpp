@@ -3,4 +3,5 @@
 
 CMakeFiles/Example.dir/Example.cpp.obj: ../Example.cpp
 CMakeFiles/Example.dir/Example.cpp.obj: ../Example.hpp
+CMakeFiles/Example.dir/Example.cpp.obj: ../slice.h
 

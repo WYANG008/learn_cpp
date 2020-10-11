@@ -74,16 +74,6 @@ CMAKE_BINARY_DIR = E:\2_Devs\cpp\learn_cpp\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -141,6 +131,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -186,46 +186,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/ExampleTests.dir/rule:
-	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/ExampleTests.dir/rule
-.PHONY : test/CMakeFiles/ExampleTests.dir/rule
+test/CMakeFiles/VariantTests.dir/rule:
+	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/VariantTests.dir/rule
+.PHONY : test/CMakeFiles/VariantTests.dir/rule
 
 # Convenience name for target.
-ExampleTests: test/CMakeFiles/ExampleTests.dir/rule
+VariantTests: test/CMakeFiles/VariantTests.dir/rule
 
-.PHONY : ExampleTests
+.PHONY : VariantTests
 
 # fast build rule for target.
-ExampleTests/fast:
-	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/build
-.PHONY : ExampleTests/fast
+VariantTests/fast:
+	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/build
+.PHONY : VariantTests/fast
 
-ExampleTests.obj: ExampleTests.cpp.obj
+VariantTests.obj: VariantTests.cpp.obj
 
-.PHONY : ExampleTests.obj
+.PHONY : VariantTests.obj
 
 # target to build an object file
-ExampleTests.cpp.obj:
-	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/ExampleTests.cpp.obj
-.PHONY : ExampleTests.cpp.obj
+VariantTests.cpp.obj:
+	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/VariantTests.cpp.obj
+.PHONY : VariantTests.cpp.obj
 
-ExampleTests.i: ExampleTests.cpp.i
+VariantTests.i: VariantTests.cpp.i
 
-.PHONY : ExampleTests.i
+.PHONY : VariantTests.i
 
 # target to preprocess a source file
-ExampleTests.cpp.i:
-	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/ExampleTests.cpp.i
-.PHONY : ExampleTests.cpp.i
+VariantTests.cpp.i:
+	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/VariantTests.cpp.i
+.PHONY : VariantTests.cpp.i
 
-ExampleTests.s: ExampleTests.cpp.s
+VariantTests.s: VariantTests.cpp.s
 
-.PHONY : ExampleTests.s
+.PHONY : VariantTests.s
 
 # target to generate assembly for a file
-ExampleTests.cpp.s:
-	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/ExampleTests.cpp.s
-.PHONY : ExampleTests.cpp.s
+VariantTests.cpp.s:
+	cd /d E:\2_Devs\cpp\learn_cpp\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/VariantTests.cpp.s
+.PHONY : VariantTests.cpp.s
 
 # Help Target
 help:
@@ -240,10 +240,10 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... ExampleTests
-	@echo ... ExampleTests.obj
-	@echo ... ExampleTests.i
-	@echo ... ExampleTests.s
+	@echo ... VariantTests
+	@echo ... VariantTests.obj
+	@echo ... VariantTests.i
+	@echo ... VariantTests.s
 .PHONY : help
 
 

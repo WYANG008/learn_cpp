@@ -1,8 +1,8 @@
 [
 {
   "directory": "E:/2_Devs/cpp/learn_cpp/build",
-  "command": "C:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++11 -o CMakeFiles\\Example.dir\\Example.cpp.obj -c E:\\2_Devs\\cpp\\learn_cpp\\Example.cpp",
-  "file": "E:/2_Devs/cpp/learn_cpp/Example.cpp"
+  "command": "C:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe   -g -std=gnu++11 -o CMakeFiles\\Variant.dir\\Variant.cpp.obj -c E:\\2_Devs\\cpp\\learn_cpp\\Variant.cpp",
+  "file": "E:/2_Devs/cpp/learn_cpp/Variant.cpp"
 },
 {
   "directory": "E:/2_Devs/cpp/learn_cpp/build/googletest/googlemock",
@@ -26,7 +26,7 @@
 },
 {
   "directory": "E:/2_Devs/cpp/learn_cpp/build/test",
-  "command": "C:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/ExampleTests.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ExampleTests.dir\\ExampleTests.cpp.obj -c E:\\2_Devs\\cpp\\learn_cpp\\test\\ExampleTests.cpp",
-  "file": "E:/2_Devs/cpp/learn_cpp/test/ExampleTests.cpp"
+  "command": "C:\\TDM-GCC-64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/VariantTests.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\VariantTests.dir\\VariantTests.cpp.obj -c E:\\2_Devs\\cpp\\learn_cpp\\test\\VariantTests.cpp",
+  "file": "E:/2_Devs/cpp/learn_cpp/test/VariantTests.cpp"
 }
 ]

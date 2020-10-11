@@ -1,0 +1,2 @@
+C:\TDM-GCC-64\bin\ar.exe qc libVariant.a CMakeFiles/Variant.dir/Variant.cpp.obj
+C:\TDM-GCC-64\bin\ranlib.exe libVariant.a

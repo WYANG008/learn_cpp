@@ -74,17 +74,15 @@ CMAKE_BINARY_DIR = E:\2_Devs\cpp\learn_cpp\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	E:\Software\cmake-3.18.4-win64-x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	E:\Software\cmake-3.18.4-win64-x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -143,15 +141,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	E:\Software\cmake-3.18.4-win64-x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	E:\Software\cmake-3.18.4-win64-x64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -186,17 +186,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Example
+# Target rules for targets named Variant
 
 # Build rule for target.
-Example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Example
-.PHONY : Example
+Variant: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Variant
+.PHONY : Variant
 
 # fast build rule for target.
-Example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Example.dir\build.make CMakeFiles/Example.dir/build
-.PHONY : Example/fast
+Variant/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Variant.dir\build.make CMakeFiles/Variant.dir/build
+.PHONY : Variant/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -251,44 +251,44 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named ExampleTests
+# Target rules for targets named VariantTests
 
 # Build rule for target.
-ExampleTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ExampleTests
-.PHONY : ExampleTests
+VariantTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 VariantTests
+.PHONY : VariantTests
 
 # fast build rule for target.
-ExampleTests/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\ExampleTests.dir\build.make test/CMakeFiles/ExampleTests.dir/build
-.PHONY : ExampleTests/fast
+VariantTests/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/build
+.PHONY : VariantTests/fast
 
-Example.obj: Example.cpp.obj
+Variant.obj: Variant.cpp.obj
 
-.PHONY : Example.obj
+.PHONY : Variant.obj
 
 # target to build an object file
-Example.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Example.dir\build.make CMakeFiles/Example.dir/Example.cpp.obj
-.PHONY : Example.cpp.obj
+Variant.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Variant.dir\build.make CMakeFiles/Variant.dir/Variant.cpp.obj
+.PHONY : Variant.cpp.obj
 
-Example.i: Example.cpp.i
+Variant.i: Variant.cpp.i
 
-.PHONY : Example.i
+.PHONY : Variant.i
 
 # target to preprocess a source file
-Example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Example.dir\build.make CMakeFiles/Example.dir/Example.cpp.i
-.PHONY : Example.cpp.i
+Variant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Variant.dir\build.make CMakeFiles/Variant.dir/Variant.cpp.i
+.PHONY : Variant.cpp.i
 
-Example.s: Example.cpp.s
+Variant.s: Variant.cpp.s
 
-.PHONY : Example.s
+.PHONY : Variant.s
 
 # target to generate assembly for a file
-Example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Example.dir\build.make CMakeFiles/Example.dir/Example.cpp.s
-.PHONY : Example.cpp.s
+Variant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Variant.dir\build.make CMakeFiles/Variant.dir/Variant.cpp.s
+.PHONY : Variant.cpp.s
 
 # Help Target
 help:
@@ -303,15 +303,15 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... Example
-	@echo ... ExampleTests
+	@echo ... Variant
+	@echo ... VariantTests
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... Example.obj
-	@echo ... Example.i
-	@echo ... Example.s
+	@echo ... Variant.obj
+	@echo ... Variant.i
+	@echo ... Variant.s
 .PHONY : help
 
 

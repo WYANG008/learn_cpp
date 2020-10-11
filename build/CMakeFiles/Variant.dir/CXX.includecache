@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/2_Devs/cpp/learn_cpp/Variant.cpp
+string
+-
+Variant.hpp
+E:/2_Devs/cpp/learn_cpp/Variant.hpp
+
+E:/2_Devs/cpp/learn_cpp/Variant.hpp
+string
+-
+slice.h
+E:/2_Devs/cpp/learn_cpp/slice.h
+
+E:/2_Devs/cpp/learn_cpp/slice.h
+assert.h
+-
+stddef.h
+-
+string.h
+-
+string
+-
+

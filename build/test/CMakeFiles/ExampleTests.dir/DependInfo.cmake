@@ -17,7 +17,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "E:/2_Devs/cpp/learn_cpp/build/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "E:/2_Devs/cpp/learn_cpp/build/CMakeFiles/Example.dir/DependInfo.cmake"
   "E:/2_Devs/cpp/learn_cpp/build/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
