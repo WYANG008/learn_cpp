@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <iostream>
 
 #include "../Example.hpp"
 
@@ -15,7 +16,9 @@
 //     ) << "MAC test passed !";
 // }
 
+
 TEST(VariantTests, PutVarint32) {
+
     uint32_t v = 111;
     std::string* s = new std::string("abc");
     PutVarint32(s, v);
@@ -25,8 +28,8 @@ TEST(VariantTests, PutVarint32) {
     v = 1 << 8;
     // 10000000 00000010
     PutVarint32(s1, v);
-    EXPECT_EQ(*s1, std::string("abco"));
-    
-    char* name = "hello";
-    name[2] = 'a';
+    char* result = new char[(*s1).size() + 1];
+    std::copy((*s1).begin(), (*s1).end(), result);
+    EXPECT_EQ(result[3], -128);
+    EXPECT_EQ(result[4], 1<<1);
 }
