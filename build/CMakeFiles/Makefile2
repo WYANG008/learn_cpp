@@ -199,8 +199,8 @@ CMakeFiles/Variant.dir/clean:
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\2_Devs\cpp\learn_cpp\build\CMakeFiles --progress-num=7,8 "Built target gmock_main"
@@ -308,9 +308,9 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 # Target rules for target test/CMakeFiles/VariantTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/VariantTests.dir/all: CMakeFiles/Variant.dir/all
-test/CMakeFiles/VariantTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/VariantTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/VariantTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+test/CMakeFiles/VariantTests.dir/all: CMakeFiles/Variant.dir/all
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\VariantTests.dir\build.make test/CMakeFiles/VariantTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\2_Devs\cpp\learn_cpp\build\CMakeFiles --progress-num=3,4 "Built target VariantTests"
