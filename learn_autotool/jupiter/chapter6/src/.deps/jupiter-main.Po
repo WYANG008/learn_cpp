@@ -1,0 +1,5 @@
+jupiter-main.o: main.c /usr/include/stdc-predef.h ../include/libjupiter.h
+
+/usr/include/stdc-predef.h:
+
+../include/libjupiter.h:

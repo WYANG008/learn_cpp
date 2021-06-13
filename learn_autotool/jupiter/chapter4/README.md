@@ -1,0 +1,5 @@
+```
+autoreconf
+./configure
+make distcheck
+```
