@@ -1,0 +1,5 @@
+hithere.lo: hithere.c /usr/include/stdc-predef.h ../../module.h
+
+/usr/include/stdc-predef.h:
+
+../../module.h:
