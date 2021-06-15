@@ -1,2 +1,4 @@
 googletest
 .vscode
+
+*.exe
